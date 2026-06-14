@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximilien Maba – Technologie & Entrepreneuriat</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+             <div class="logo">
+                <img src="/images/logo.jpeg" alt="Logo Maximilien Maba" class="logo-img" id="logoClick">
+                <div class="logo-text">
+                    <h1>Maximilien Maba</h1>
+                    <span>Tech & Business</span>
+                </div>
+            </div>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html" >Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                <!--<li><a href="projets.html">Projets</a></li>-->
+                    <li><a href="contact.html"class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Contactez-moi</h2>
+                <p>Pour un devis gratuit ou toute question, remplissez le formulaire ou écrivez-moi directement.
+                   <br> N'attendez pas pour donner vie à votre projet digital !
+                </p>
+            </div>
+        </section>
+        <section class="contact-form-section">
+            <div class="container">
+                <form id="contact-form" action="https://formspree.io/f/xgobrapb" method="POST">
+                    <label for="name">Nom complet</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="phone">Téléphone (WhatsApp)</label>
+                    <input type="tel" id="phone" name="phone">
+                    <label for="message">Message / Description du projet</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Envoyer la demande</button>
+                    <p id="form-status" style="margin-top:1rem;"></p>
+                </form>
+                <div class="contact-direct">
+                    <p>Email : <a href="mailto:mabamaximilien@gmail.com">mabamaximilien@gmail.com</a></p>
+                    <p>WhatsApp : <a href="https://wa.me/243817297587" target="_blank"><strong>+243 817297587</strong></a> </p>
+                    <p>Basé en RDC – disponible en ligne partout.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Maximilien Maba – Tous droits réservés</p>
+            <div class="socials">
+                <a href="https://wa.me/243817297587">WhatsApp</a> | <a href="https://www.linkedin.com/in/maximilien-maba/">LinkedIn</a> | <a href="mailto:mabamaximilien@gmail.com">Email</a> | <a href="https://www.facebook.com/maximilienmaba.dieumerci">Facebook</a>
+                | <a href="https://www.tiktok.com/@maximilien_maba">TikTok</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
