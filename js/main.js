@@ -16,7 +16,7 @@ document.querySelectorAll('nav a').forEach(link => {
 });
 
 // Formulaire de contact (Formspree)
-/* const form = document.getElementById('contact-form');
+const form = document.getElementById('contact-form');
 const statusMsg = document.getElementById('form-status');
 
 if (form) {
@@ -40,7 +40,7 @@ if (form) {
             statusMsg.textContent = 'Erreur réseau. Vérifiez votre connexion.';
         }
     });
-}*/
+}
 
 // Animation des compteurs
 const compteurs = document.querySelectorAll('.chiffre-nombre');
