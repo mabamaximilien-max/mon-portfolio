@@ -516,3 +516,5 @@ footer {
     font-weight: bold;
     cursor: pointer;
 }
+
+.chiffre-nombre small { font-size: 0.5em; }

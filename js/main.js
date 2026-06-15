@@ -43,6 +43,7 @@ if (form) {
 }*/
 
 // Animation des compteurs
+// Animation des compteurs
 const compteurs = document.querySelectorAll('.chiffre-nombre');
 
 const observer = new IntersectionObserver((entries) => {
@@ -52,16 +53,29 @@ const observer = new IntersectionObserver((entries) => {
             const target = parseInt(el.getAttribute('data-target'));
             let current = 0;
             const increment = target / 50;
+            
+            // Vérifier si cet élément contient une balise <small> (donc doit afficher un %)
+            const hasSmall = el.querySelector('small') !== null;
+            
             const updateCounter = () => {
                 current += increment;
                 if (current < target) {
-                    el.innerText = Math.ceil(current);
+                    let displayValue = Math.ceil(current);
+                    if (hasSmall) {
+                        // Garder le % à chaque étape
+                        el.innerHTML = displayValue + '<small>%</small>';
+                    } else {
+                        el.innerText = displayValue;
+                    }
                     requestAnimationFrame(updateCounter);
                 } else {
-                    el.innerText = target;
-                    if (el.querySelector('small')) {
+                    // Fin de l'animation
+                    if (hasSmall) {
                         el.innerHTML = target + '<small>%</small>';
+                    } else {
+                        el.innerText = target;
                     }
+                    observer.unobserve(el);
                 }
             };
             updateCounter();
