@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.jpeg" type="image/x-icon">
     <title>Maximilien Maba – Technologie & Entrepreneuriat</title>
     <meta name="description" content="Contactez Maximilien Maba pour un devis gratuit ou toute question sur vos projets web. Disponible à Kinshasa et en ligne.">
     <meta name="author" content="Maximilien Maba">
@@ -35,16 +36,18 @@
     <main>
         <section class="page-header">
             <div class="container">
-                <h2>Contactez-moi</h2>
-                <p>Pour un devis gratuit ou toute question, remplissez le formulaire ou écrivez-moi directement.
+                <h2>Contactez-nous</h2>
+                <p>Pour un devis gratuit ou toute question, remplissez le formulaire ou écrivez-nous directement.
                    <br> N'attendez pas pour donner vie à votre projet digital !
                 </p>
             </div>
         </section>
         <section class="contact-form-section">
             <div class="container">
-                <form id="contact-form" action="https://formspree.io/f/xgobrapb"method="POST">
-                    <label for="name">Nom complet</label>
+                    <!--<form id="contact-form" action="https://formspree.io/f/xgobrapb"method="POST">
+                    <label for="name">Nom complet</label>  -->
+                <form  name="contact" id="contact-form" data-netlify="true" method="POST">
+                    <input type="hidden" name="contact" value="contact">
                     <input type="text" id="name" name="name" required>
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
